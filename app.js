@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended : true }));
 
 
-const client = new MongoClient("mongodb+srv://demon22:iamdemon22@cluster0.rhm8l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+const client = new MongoClient("mongodb+srv://demon22:<Password>@cluster0.rhm8l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 client.connect().then(function(mClient){
     const db =mClient.db(); 
     console.log("Database is connected ")
